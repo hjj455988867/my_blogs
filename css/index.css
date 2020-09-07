@@ -2,6 +2,14 @@ html,body{
     height: 100%;
 }
 
-.body{
-    background: url('../');
+body{
+    background: url('../img/homebg.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.shade-div{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(37, 104, 163, 0.7);
+    position: fixed;
 }
