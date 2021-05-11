@@ -7,11 +7,33 @@
     <link href="./css/reset.css" rel="stylesheet" type="text/css" /> 
     <link href="./css/index.css" rel="stylesheet" type="text/css" /> 
 </head>
-
+<style>
+    #btn{
+        width: 150px;
+        height: 150px;
+    }
+    #btn1{
+        width: 150px;
+        height: 150px;
+    }
+</style>
 <body>
     <div class="shade-div">
+        <button id="btn">刷新</button>
+        <button id="btn1">0</button>
 
     </div>
 </body>
 </html>
+<script>
+    let num = 0
+    document.getElementById('btn1').innerHTML = num
+    document.getElementById('btn1').onclick = function(){
+        num++
+        document.getElementById('btn1').innerHTML = num
+    }
+    document.getElementById('btn').onclick = function(){
+        location.reload();
+    }
+</script>
 <script src="./app.js"></script>
